@@ -1,6 +1,16 @@
 # GeminiNano
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+En este repositorio puedes ver un ejemplo de como implementar Gemini Nano en una aplicación web usando Angular.
+
+Tradicionalmente, los modelos de inteligencia artificial se ejecutaban del lado del servidor debido a su tamaño, pero ahora es posible ejecutarlos directamente en el navegador.
+
+Aprenderás paso a paso cómo configurar y utilizar Gemini Nano en Chrome Canary y cómo crear una pequeña aplicación Angular que integre esta tecnología.
+
+¡No te lo pierdas!
+
+<a href="https://www.youtube.com/watch?v=6hstm7aTY60" target="_blank">
+<img src="https://i3.ytimg.com/vi/6hstm7aTY60/maxresdefault.jpg" 
+alt="Gemini Nano en Angular" style="max-width: 100%;" border="10" />Si quieres ver como lo hice, puede ver el video en youtube.</a>
 
 ## Development server
 
