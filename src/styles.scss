@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+$primary-color: #007bff;
+$secondary-color: #f0f0f0;
+$text-color: #fff;
+$border-color: #ccc;
+$background-color: #f9f9f9;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+
+$padding-small: 10px;
+$padding-medium: 15px;
+
+$margin-small: 5px;
+$margin-medium: 10px;
+$margin-large: 20px;
+
+@mixin border-radius($radius: 5px) {
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+  box-shadow: 0 0 5px $shadow;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: $margin-large;
+}
+
+.chat-input {
+  display: flex;
+  margin-bottom: $margin-medium;
+
+  input {
+    width: 300px;
+    padding: $padding-small;
+    margin-right: $margin-medium;
+    @include border-radius();
+    border: 1px solid $border-color;
+  }
+
+  button {
+    padding: $padding-small $padding-medium;
+    border: none;
+    color: $text-color;
+    background-color: $primary-color;
+    @include border-radius();
+    cursor: pointer;
+  }
+}
+
+
+.chat-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $margin-large;
+
+  button {
+    margin: $margin-small;
+    padding: $padding-small;
+    border: none;
+    @include border-radius();
+    cursor: pointer;
+    background-color: $secondary-color;
+
+  }
+}
+
+.chat-output {
+  width: 100%;
+  max-width: 600px;
+}
+
+.chat-message {
+  background-color: $background-color;
+  padding: $padding-medium;
+  margin-bottom: $margin-medium;
+  @include border-radius();
+  @include box-shadow($box-shadow-color);
+}
+
+.text-bold {
+  font-weight: bold;
+}
